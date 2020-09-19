@@ -7,6 +7,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class DropDownComponent implements OnInit {
   val : string[] = ["Jim" , "Ron" , "Jack"];
+  dict : string[] = ["apple" ,"ape", "art" , "axe" , "ball" , "bat" , "brick","branch" , "cat" , "catch" , "cap"];
+  typeAhead(inp:string){
+    
+  }
   constructor(){}
   ngOnInit(){}
 }
