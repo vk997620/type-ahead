@@ -1,9 +1,11 @@
 <label for="search">Search:</label>
-<input id="searcher" placeholder="Search..." type="text" list="searchIds">
+<input id="searcher" placeholder="Search..." type="text" list="searchIds"
+  (keyup)="search($event)">
 <datalist id="searchIds">
   <option *ngFor="let v of val" [attr.data-val]="v">
     {{v}}
   </option>
 </datalist>
+
 
 
